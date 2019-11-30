@@ -40,7 +40,7 @@ public class Barcelona extends TabActivity {
         web = (WebView)findViewById(R.id.artist2);
         web.setWebViewClient(new ViewClient());
         WebSettings webset = web.getSettings();
-        web.loadUrl("https://weather.com/ko-KR/weather/today/l/66d93786ffcc98f9cd3bae34e03d05c3d4daa0178c2c4bffe4cfd354cda80400");
+        web.loadUrl("https://weather.com/ko-KR/weather/hourbyhour/l/0ce8d487db0a25631ee2017ddbe068bfba0de2b24de23f0b82c95863724f3a86");
         webset.setBuiltInZoomControls(true);
 
         TabHost.TabSpec tabSpec3 = tabHost.newTabSpec("SONG3").setIndicator("숙박");
