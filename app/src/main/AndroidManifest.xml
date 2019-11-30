@@ -30,16 +30,26 @@
         <activity android:name=".Hanoi"/>
         <activity android:name=".Danang"/>
         <activity android:name=".Hoian"/>
+        <activity android:name=".SpainAct"/>
+        <activity android:name=".Barcelona"/>
+        <activity android:name=".Madrid"/>
+        <activity android:name=".Sevilla"/>
         <activity android:name=".BangkokReview"/>
         <activity android:name=".ChiangReview"/>
         <activity android:name=".DanangReview"/>
         <activity android:name=".HanoiReview"/>
         <activity android:name=".HoianReview"/>
+        <activity android:name=".SevillaReview"/>
+        <activity android:name=".MadridReview"/>
+        <activity android:name=".BarcelonaReview"/>
         <activity android:name=".BoardActivity"/>
         <activity android:name=".BoardActivity2"/>
         <activity android:name=".BoardActivity3"/>
         <activity android:name=".BoardActivity4"/>
         <activity android:name=".BoardActivity5"/>
+        <activity android:name=".BoardActivity6"/>
+        <activity android:name=".BoardActivity7"/>
+        <activity android:name=".BoardActivity8"/>
         <activity android:name=".Review"/>
         <activity android:name=".Addit"/>
 

@@ -88,12 +88,17 @@ public class TravelMain extends AppCompatActivity{
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(i == 0){
+                if(i == 0) {
                     Intent intent = new Intent(getApplicationContext(), ThaiAct.class);
                     startActivity(intent);
-                }else if(i == 2){
-                    Intent intent2 = new Intent(getApplicationContext(), VetAct.class);
+                }
+                else if(i == 1){
+                    Intent intent2 = new Intent(getApplicationContext(), SpainAct.class);
                     startActivity(intent2);
+
+                }else if(i == 2){
+                    Intent intent3 = new Intent(getApplicationContext(), VetAct.class);
+                    startActivity(intent3);
                 }
             }
         });
