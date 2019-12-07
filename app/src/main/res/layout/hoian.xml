@@ -13,9 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="호이안 \n 여행계획을 세워보세요"
-            android:fontFamily="@font/macaron"
+            android:fontFamily="@font/bold"
             android:layout_margin="10dp"
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -44,9 +44,9 @@
                         android:layout_height="wrap_content"
                         android:textStyle="normal"
                         android:fontFamily="@font/story"
-                        android:textSize="40dp"
+                        android:textSize="20dp"
                         android:layout_margin="20dp"
-                        android:text="EnjoyTravel에서 추천하는 꼭 가봐야할 여행지!"/>
+                        android:text="EnjoyTravel에서\n 추천하는 꼭 가봐야할 여행지!"/>
                     <Gallery
                         android:id="@+id/gallery01"
                         android:layout_width="400dp"
@@ -255,8 +255,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
                                 android:text="- 가는 방법 : 내원교에서 차로 12분 거리에 위치
-                                              - 자전거 보관소 유로
-                                              - 수영은 금지되어 즐길 수 없음"/>
+                                              - 자전거 보관소 유로\n - 수영은 금지되어 즐길 수 없음"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -337,19 +336,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/artist3"
-                android:orientation="vertical"
-                android:background="#04ff30">
+                android:orientation="vertical">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="주요 맛집 리스트"
-                    android:textSize="40dp"
-                    android:layout_margin="20dp"
-                    android:textStyle="bold"/>
-                <ListView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/listview"></ListView>
+                    android:text="잠시후 사이트로 이동"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -360,7 +353,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="#02fff0">
+                    android:background="#01DFD7">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -411,15 +404,28 @@
                             android:layout_weight="1"/>
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:text="* 왼쪽 버튼을 클릭하면 이미지 첨부가 가능합니다."/>
+
                     <Button
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:id="@+id/btn10"
-                        android:background="@color/colorAccent"
                         android:text="리뷰 작성하기"
                         android:textSize="20dp"
-                        android:layout_margin="20dp"/>
+                        android:textColor="#fff"
+                        android:layout_margin="20dp"
+
+                        android:background="@drawable/buttonshape4"
+                        android:shadowColor="#3242A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"/>
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>

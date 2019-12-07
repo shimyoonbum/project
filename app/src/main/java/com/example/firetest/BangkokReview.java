@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RatingBar;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -86,14 +87,20 @@ public class BangkokReview extends AppCompatActivity implements View.OnClickList
         e1 = (EditText) findViewById(R.id.name);
         e2 = (EditText) findViewById(R.id.country);
         e3 = (EditText) findViewById(R.id.contents);
+
+        e3.setHorizontallyScrolling(false);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_insert:
-                upload(imagePath);
-                break;
+                try{
+                    upload(imagePath);
+                    Toast.makeText(getApplicationContext(), "등록 완료!", Toast.LENGTH_LONG).show();
+                }catch (Exception e){
+                    Toast.makeText(getApplicationContext(), "입력을 하지 않은 항목이 있습니다!", Toast.LENGTH_LONG).show();
+                }
             case R.id.btn2:
                 Intent i = new Intent(this, BoardActivity.class);
                 startActivity(i);

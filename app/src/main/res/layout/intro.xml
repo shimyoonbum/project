@@ -4,21 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enjoy Travel!"
-        android:fontFamily="@font/book"
-        android:textSize="80dp"
-        android:textStyle="bold"
-        android:textColor="#8833"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal"/>
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="515dp"
-        android:src="@drawable/travel" />
+        android:layout_height="match_parent"
+        android:src="@drawable/intro1" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

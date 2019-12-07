@@ -13,9 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="하노이 \n 여행계획을 세워보세요"
-            android:fontFamily="@font/macaron"
+            android:fontFamily="@font/bold"
             android:layout_margin="10dp"
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,10 +43,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="normal"
-                        android:fontFamily="@font/story"
-                        android:textSize="40dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="20dp"
                         android:layout_margin="20dp"
-                        android:text="EnjoyTravel에서 추천하는 꼭 가봐야할 여행지!"/>
+                        android:text="EnjoyTravel에서\n 추천하는 꼭 가봐야할 여행지!" />
                     <Gallery
                         android:id="@+id/gallery01"
                         android:layout_width="400dp"
@@ -118,7 +118,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
-                                android:text="성당이기에 복장매너 준수!\n 주변으로 연유카페로 유명한 콩카페부터 맛집, 기념풍 상점\n 마트 등이 밀집되어 있다. "/>
+                                android:text=" - 성당이기에 복장매너 준수!\n - 주변으로 연유카페로 유명한 콩카페부터 맛집, 기념풍 상점, 마트 등이 밀집되어 있다. "/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -253,9 +253,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
-                                android:text="- 피크 시간 : 8시 이후
-                                              - 가는 방법 : 동쑤언 시장에서 7분 거리 위치
-                                              - 호객 행위 및 소매치기 주위할 것!"/>
+                                android:text="- 피크 시간 : 8시 이후 \n - 가는 방법 : 동쑤언 시장에서 7분 거리 위치\n - 호객 행위 및 소매치기 주위할 것!"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -401,19 +399,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/artist3"
-                android:orientation="vertical"
-                android:background="#04ff30">
+                android:orientation="vertical">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="주요 맛집 리스트"
-                    android:textSize="40dp"
-                    android:layout_margin="20dp"
-                    android:textStyle="bold"/>
-                <ListView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/listview"></ListView>
+                    android:text="잠시후 사이트로 이동"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -424,7 +416,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="#02fff0">
+                    android:background="#01DFD7">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -475,15 +467,28 @@
                             android:layout_weight="1"/>
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:text="* 왼쪽 버튼을 클릭하면 이미지 첨부가 가능합니다."/>
+
                     <Button
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:id="@+id/btn9"
-                        android:background="@color/colorAccent"
                         android:text="리뷰 작성하기"
                         android:textSize="20dp"
-                        android:layout_margin="20dp"/>
+                        android:textColor="#fff"
+                        android:layout_margin="20dp"
+
+                        android:background="@drawable/buttonshape4"
+                        android:shadowColor="#3242A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"/>
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>

@@ -147,11 +147,21 @@ public class Hanoi extends TabActivity {
         web.loadUrl("https://weather.com/ko-KR/weather/hourbyhour/l/65bbbcbef8448c1f971408c74ed922af1bed94ddd8cc7a48d2bae40e75cef726");
         webset.setBuiltInZoomControls(true);
 
-        TabHost.TabSpec tabSpec3 = tabHost.newTabSpec("SONG3").setIndicator("숙박");
+        TabHost.TabSpec tabSpec3 = tabHost.newTabSpec("SONG3").setIndicator("숙박/항공권");
         tabSpec3.setContent(R.id.artist3);
         tabHost.addTab(tabSpec3);
 
-        TabHost.TabSpec tabSpec4 = tabHost.newTabSpec("SONG4").setIndicator("맛집");
+        tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+            @Override
+            public void onTabChanged(String tabId) {
+                if(tabId.equals("SONG3")){
+                    Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.hotelscombined.co.kr/"));
+                    startActivity(intent1);
+                }
+            }
+        });
+
+        TabHost.TabSpec tabSpec4 = tabHost.newTabSpec("SONG4").setIndicator("리뷰보기");
         tabSpec4.setContent(R.id.artist4);
         tabHost.addTab(tabSpec4);
 

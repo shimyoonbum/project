@@ -93,7 +93,7 @@ public class BarcelonaReview extends AppCompatActivity implements View.OnClickLi
                     upload(imagePath);
                     Toast.makeText(getApplicationContext(), "등록 완료!", Toast.LENGTH_LONG).show();
                 }catch (Exception e){
-                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "입력을 하지 않은 항목이 있습니다!", Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.btn2:

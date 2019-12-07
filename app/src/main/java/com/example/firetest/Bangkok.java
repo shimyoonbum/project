@@ -170,9 +170,19 @@ public class Bangkok extends TabActivity {
                 "Region+Thailand?placeId=61d235a12c8f0b158c472bb5cf4a6a2d17b42270c214e7285c48666e57f21864");
         webset.setBuiltInZoomControls(true);
 
-        TabHost.TabSpec tabSpec3 = tabHost.newTabSpec("SONG3").setIndicator("동행구하기");
+        TabHost.TabSpec tabSpec3 = tabHost.newTabSpec("SONG3").setIndicator("숙박/항공권");
         tabSpec3.setContent(R.id.artist3);
         tabHost.addTab(tabSpec3);
+
+        tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+            @Override
+            public void onTabChanged(String tabId) {
+                if(tabId.equals("SONG3")){
+                    Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.hotelscombined.co.kr/"));
+                    startActivity(intent1);
+                }
+            }
+        });
 
         TabHost.TabSpec tabSpec4 = tabHost.newTabSpec("SONG4").setIndicator("리뷰");
         tabSpec4.setContent(R.id.artist4);

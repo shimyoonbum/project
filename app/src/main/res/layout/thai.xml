@@ -10,10 +10,20 @@
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="300dp"
             android:orientation="vertical"
             android:background="@drawable/wat"
             >
+            <TextView
+                android:id="@+id/thaiTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -71,7 +81,86 @@
             <VideoView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/video"/>
+                android:id="@+id/vv"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="환율 계산하기"
+                android:fontFamily="@font/forest"
+                android:layout_margin="20dp"
+                android:textSize="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:background="#ddd"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="THB"
+                        android:textSize="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="30dp"
+                        android:id="@+id/tafter"
+                        android:layout_marginRight="20dp"/>
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="바트"
+                        android:textAlignment="textEnd"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="KRW"
+                        android:textSize="30dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_weight="3"
+                        android:inputType="number"
+                        android:id="@+id/tedit"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="원"
+                        android:layout_marginRight="15dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="30dp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -82,7 +171,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textColor="#ff33"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -114,7 +203,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="방콕 바로 가기"
-                android:id="@+id/b1"/>
+                android:id="@+id/b1"
+
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -138,7 +235,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="파타야 바로 가기"
-                android:id="@+id/b2"/>
+                android:id="@+id/b2"
+
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -162,7 +267,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="치얌마이 바로 가기"
-                android:id="@+id/b3"/>
+                android:id="@+id/b3"
+
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

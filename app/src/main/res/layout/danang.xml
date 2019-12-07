@@ -13,9 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="다낭 \n 여행계획을 세워보세요"
-            android:fontFamily="@font/macaron"
+            android:fontFamily="@font/bold"
             android:layout_margin="10dp"
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,10 +43,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="normal"
-                        android:fontFamily="@font/story"
-                        android:textSize="40dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="20dp"
                         android:layout_margin="20dp"
-                        android:text="EnjoyTravel에서 추천하는 꼭 가봐야할 여행지!"/>
+                        android:text="EnjoyTravel에서\n 추천하는 꼭 가봐야할 여행지!"/>
                     <Gallery
                         android:id="@+id/gallery01"
                         android:layout_width="400dp"
@@ -187,8 +187,7 @@
                                 android:layout_margin="20dp"
                                 android:text="- 이용가능 시간 : 06:00 AM ~ 18:00 PM 연중 무휴
                                               - 가는 방법 : 다냥 대성당에서 도보 5분 소요
-                                              - 흥정 필수, 소매치기에 주의!
-                                              - 화장실 이용료 챙기기"/>
+                                              - 흥정 필수, 소매치기에 주의!\m - 화장실 이용료 챙기기"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -323,9 +322,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
-                                android:text="- 연날리기 축제 7,8월에 열림
-                                              - 가는 방법 : k마트 본점에서 차로 4분거리 위치
-                                              - 해양 스포츠 이용 가격(패러 세일링 1인 50만동,바나나 보트 백만동, 제트스키 15분 50만동)"/>
+                                android:text="- 연날리기 축제 7,8월에 열림\n - 가는 방법 : k마트 본점에서 차로 4분거리 위치\n - 해양 스포츠 이용 가격(패러 세일링 1인 50만동,바나나 보트 백만동, 제트스키 15분 50만동)"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -407,19 +404,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/artist3"
-                android:orientation="vertical"
-                android:background="#04ff30">
+                android:orientation="vertical">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="주요 맛집 리스트"
-                    android:textSize="40dp"
-                    android:layout_margin="20dp"
-                    android:textStyle="bold"/>
-                <ListView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/listview"></ListView>
+                    android:text="잠시후 사이트로 이동"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -430,7 +421,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="#02fff0">
+                    android:background="#01DFD7">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -481,15 +472,28 @@
                             android:layout_weight="1"/>
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:text="* 왼쪽 버튼을 클릭하면 이미지 첨부가 가능합니다."/>
+
                     <Button
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:id="@+id/btn8"
-                        android:background="@color/colorAccent"
                         android:text="리뷰 작성하기"
                         android:textSize="20dp"
-                        android:layout_margin="20dp"/>
+                        android:textColor="#fff"
+                        android:layout_margin="20dp"
+
+                        android:background="@drawable/buttonshape4"
+                        android:shadowColor="#3242A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"/>
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>

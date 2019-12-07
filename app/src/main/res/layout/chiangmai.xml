@@ -13,9 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="치앙마이 \n 여행계획을 세워보세요"
-            android:fontFamily="@font/macaron"
+            android:fontFamily="@font/bold"
             android:layout_margin="10dp"
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,10 +43,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="normal"
-                        android:fontFamily="@font/story"
-                        android:textSize="40dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="20dp"
                         android:layout_margin="20dp"
-                        android:text="EnjoyTravel에서 추천하는 꼭 가봐야할 여행지!"/>
+                        android:text="EnjoyTravel에서\n 추천하는 꼭 가봐야할 여행지!"/>
                     <Gallery
                         android:id="@+id/gallery01"
                         android:layout_width="400dp"
@@ -257,10 +257,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
-                                android:text="- 이용가능 시간 : 10:00 AM ~ 22:00 PM(운영시간 매장별 상이)
-                                              - 가는 방법 : 왓 치앙만에서 차로 10분거리에 위치
-                                              - 무료 순환 셔틀버스 이용가능(치앙마이 대학교)
-                                              - 인포메이션 3층에 존재"/>
+                                android:text="- 이용가능 시간 : 10:00 AM ~ 22:00 PM(운영시간 매장별 상이)\n - 가는 방법 : 왓 치앙만에서 차로 10분거리에 위치\n - 무료 순환 셔틀버스 이용가능(치앙마이 대학교)\n - 인포메이션 3층에 존재"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -327,8 +324,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
-                                android:text="- 이용가능 시간 : 17:00 PM ~ 24:00 PM(일요일 휴뮤)
-                                              - 가는 방법 : 와로롯 시장에서 도보로 7분 거리 위치"/>
+                                android:text="- 이용가능 시간 : 17:00 PM ~ 24:00 PM(일요일 휴뮤)\n - 가는 방법 : 와로롯 시장에서 도보로 7분 거리 위치"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -396,11 +392,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
-                                android:text="- 이용가능 시간 : 08:00 AM ~ 17:00 PM
-                                              - 이용가능 시간(주말) : 08:00 AM ~ 17:30 PM
-                                              - 가는 방법 : 치앙라이 버스 터미널에서 차로 19분 거리 위치
-                                              - 이용료(유료) : 100 바트
-                                              - 민소매나 반바지의 착용 제한, 내부에선 신발 착용 금지"/>
+                                android:text=" - 이용가능 시간 : 08:00 AM ~ 17:00 PM\n - 이용가능 시간(주말) : 08:00 AM ~ 17:30 PM\n - 가는 방법 : 치앙라이 버스 터미널에서 차로 19분 거리 위치\n - 민소매나 반바지의 착용 제한, 내부에선 신발 착용 금지\n - 이용료(유료) : 100 바트"
+                                />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -413,15 +406,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/artist3"
-                android:orientation="vertical"
-                android:background="#04ff30">
+                android:orientation="vertical">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="주요 맛집 리스트"
-                    android:textSize="40dp"
-                    android:layout_margin="20dp"
-                    android:textStyle="bold"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="잠시후 사이트로 이동"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -432,7 +423,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="#02fff0">
+                    android:background="#01DFD7">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -483,15 +474,28 @@
                             android:layout_weight="1"/>
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:text="* 왼쪽 버튼을 클릭하면 이미지 첨부가 가능합니다."/>
+
                     <Button
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:id="@+id/btn7"
-                        android:background="@color/colorAccent"
                         android:text="리뷰 작성하기"
                         android:textSize="20dp"
-                        android:layout_margin="20dp"/>
+                        android:textColor="#fff"
+                        android:layout_margin="20dp"
+
+                        android:background="@drawable/buttonshape4"
+                        android:shadowColor="#3242A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"/>
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>

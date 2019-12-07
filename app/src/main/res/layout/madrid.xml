@@ -13,9 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="마드리드 \n 여행계획을 세워보세요"
-            android:fontFamily="@font/macaron"
+            android:fontFamily="@font/bold"
             android:layout_margin="10dp"
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,34 +43,293 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="normal"
-                        android:fontFamily="@font/story"
-                        android:textSize="40dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="20dp"
                         android:layout_margin="20dp"
-                        android:text="EnjoyTravel에서 추천하는 꼭 가봐야할 여행지!"/>
+                        android:text="EnjoyTravel에서\n 추천하는 꼭 가봐야할 여행지!"/>
                     <Gallery
                         android:id="@+id/gallery01"
-                        android:layout_width="match_parent"
+                        android:layout_width="400dp"
                         android:layout_height="300dp"
                         android:layout_gravity="center"
-                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
                         android:background="#000"
                         />
-                    <ImageView
-                        android:id="@+id/img01"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_above="@id/gallery01"
-                        android:layout_margin="20dp"
-                        android:adjustViewBounds="true"
-                        android:src="@drawable/g1"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:textSize="20dp"
-                        android:id="@+id/sample"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/l1"
+                        android:visibility="gone">
+                        <ImageView
+                            android:id="@+id/img01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/gallery01"
+                            android:layout_margin="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/m1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="40dp"
+                            android:layout_margin="20dp"
+                            android:textStyle="bold"
+                            android:text="마요르 광장"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="@string/m1"
+                            android:textSize="20dp"/>
+                        <ImageButton
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:layout_margin="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/ib1"
+                            android:src="@drawable/m1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="위 썸네일 클릭으로 영상 보러 가기"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dip"
+                            android:layout_marginTop="20dp"
+                            android:background="#AAAAAA"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:text="관광지 이용팁"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="- 세비야 대성당 이용시간( 9시 부터 18시 )
+                                              - 가는 방법 : 세비야 중심지에서 도보로 8분거리에 위치"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/l2"
+                        android:visibility="gone">
+                        <ImageView
+                            android:id="@+id/img02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/gallery01"
+                            android:layout_margin="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/m2"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:layout_margin="20dp"
+                            android:text="마드리드 왕궁"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="@string/m2"
+                            android:textSize="20dp"/>
+                        <ImageButton
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:layout_margin="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/ib2"
+                            android:src="@drawable/m2"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="위 썸네일 클릭으로 영상 보러 가기"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dip"
+                            android:layout_marginTop="20dp"
+                            android:background="#AAAAAA"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:text="관광지 이용팁"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="- 이용가능 시간 : 06:00 AM ~ 18:00 PM 연중 무휴
+                                              - 가는 방법 : 마드리에드 솔역에서 에서 도보 5분 소요
+                                              -  소매치기에 주의!
+                                             "/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/l3"
+                        android:visibility="gone">
+                        <ImageView
+                            android:id="@+id/img03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/gallery01"
+                            android:layout_margin="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/m3"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:layout_margin="20dp"
+                            android:text="레티로 공원"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="@string/m3"
+                            android:textSize="20dp"/>
+                        <ImageButton
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:layout_margin="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/ib3"
+                            android:src="@drawable/m3"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="위 썸네일 클릭으로 영상 보러 가기"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dip"
+                            android:layout_marginTop="20dp"
+                            android:background="#AAAAAA"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:text="관광지 이용팁"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="- 이용가능 시간 : 09:00 AM ~ 19:00 PM
+                                              - 가는 방법 : 중심지에서 약간 떨어져있어 UBER나 대중교통을 이용해 이동 하기 바람"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/l4"
+                        android:visibility="gone">
+                        <ImageView
+                            android:id="@+id/img04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/gallery01"
+                            android:layout_margin="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/m4"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:layout_margin="20dp"
+                            android:text="프라도 미술관"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="@string/m4"
+                            android:textSize="20dp"/>
+                        <ImageButton
+                            android:layout_width="400dp"
+                            android:layout_height="400dp"
+                            android:layout_margin="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/ib4"
+                            android:src="@drawable/m4"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="위 썸네일 클릭으로 영상 보러 가기"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dip"
+                            android:layout_marginTop="20dp"
+                            android:background="#AAAAAA"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:text="관광지 이용팁"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:text="- 마드리에서 가장 유명한 미술관으로 꼭 가볼것을 추천
+                                              - 가는 방법 :마드리드 중심역 솔역에서 도보로 10분으로 가까움
+                                              "/>
+                        </LinearLayout>
+                    </LinearLayout>
+
                 </LinearLayout>
             </ScrollView>
+
             <WebView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -79,8 +338,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/artist3"
-                android:orientation="vertical"
-                android:background="#04ff30">
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="잠시후 사이트로 이동"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -91,7 +355,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="#02fff0">
+                    android:background="#01DFD7">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -142,15 +406,28 @@
                             android:layout_weight="1"/>
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:text="* 왼쪽 버튼을 클릭하면 이미지 첨부가 가능합니다."/>
+
                     <Button
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:id="@+id/btn12"
-                        android:background="@color/colorAccent"
                         android:text="리뷰 작성하기"
                         android:textSize="20dp"
-                        android:layout_margin="20dp"/>
+                        android:textColor="#fff"
+                        android:layout_margin="20dp"
+
+                        android:background="@drawable/buttonshape4"
+                        android:shadowColor="#3242A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"/>
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>

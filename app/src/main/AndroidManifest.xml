@@ -25,6 +25,7 @@
         <activity android:name=".TravelMain"/>
         <activity android:name=".ThaiAct"/>
         <activity android:name=".Bangkok"/>
+        <activity android:name=".Pattaya"/>
         <activity android:name=".Chiangmai"/>
         <activity android:name=".VetAct"/>
         <activity android:name=".Hanoi"/>
@@ -42,6 +43,7 @@
         <activity android:name=".SevillaReview"/>
         <activity android:name=".MadridReview"/>
         <activity android:name=".BarcelonaReview"/>
+        <activity android:name=".PattayaReview"/>
         <activity android:name=".BoardActivity"/>
         <activity android:name=".BoardActivity2"/>
         <activity android:name=".BoardActivity3"/>
@@ -50,8 +52,9 @@
         <activity android:name=".BoardActivity6"/>
         <activity android:name=".BoardActivity7"/>
         <activity android:name=".BoardActivity8"/>
-        <activity android:name=".Review"/>
-        <activity android:name=".Addit"/>
+        <activity android:name=".BoardActivity9"/>
+        <activity android:name=".PairReview"/>
+        <activity android:name=".PairActivity"/>
 
     </application>
 </manifest>

@@ -24,7 +24,7 @@ public class TravelMain extends AppCompatActivity{
     private EditText editSearch;        // 검색어를 입력할 Input 창
     private SearchAdapter adapter;      // 리스트뷰에 연결할 아답터
     private ArrayList<String> arraylist = null;
-    private Button button, button2;
+    private Button button, button2, button3;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
@@ -66,6 +66,14 @@ public class TravelMain extends AppCompatActivity{
                     }
                 });
                 dlg2.show();
+            }
+        });
+        button3 = (Button)findViewById(R.id.bb1);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), PairReview.class);
+                startActivity(i);
             }
         });
 

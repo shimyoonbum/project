@@ -13,9 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="방콕 \n 여행계획을 세워보세요"
-            android:fontFamily="@font/macaron"
+            android:fontFamily="@font/bold"
             android:layout_margin="10dp"
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,10 +43,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="normal"
-                        android:fontFamily="@font/story"
-                        android:textSize="40dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="20dp"
                         android:layout_margin="20dp"
-                        android:text="EnjoyTravel에서 추천하는 꼭 가봐야할 여행지!"/>
+                        android:text="EnjoyTravel에서\n 추천하는 꼭 가봐야할 여행지!"/>
                     <Gallery
                         android:id="@+id/gallery01"
                         android:layout_width="400dp"
@@ -185,7 +185,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
                                 android:text="- 이용가능 시간 : 09:00 AM ~ 18:00 PM
-                                              - 가는 방법 : BTS Mo Chit역에서 gate 3번 까지 도보 5분 소요
+                                              - 가는 방법 : BTS Mo Chit역에서 도보 5분 소요
                                               - chatuchak guide 공식 시장 어플로 원하는 점포 검색 가능
                                               - 화장실 이용료 5 bat 챙기기"/>
                         </LinearLayout>
@@ -253,11 +253,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
-                                android:text="- 이용가능 시간 : 08:30 AM ~ 15:30 PM
-                                              - 가는 방법 : 왓 프라캐우에서 도보 7분 거리 위치
-                                              - chatuchak guide 공식 시장 어플로 원하는 점포 검색 가능
-                                              - 왕궁 입장료 : 500 바트
-                                              - 슬리퍼, 민소매, 반바지 등 의류 제한 있음(왕궁 앞의 대여점에서 보증금으로 의류 대여 가능)"/>
+                                android:text="- 이용가능 시간 : 08:30 AM ~ 15:30 PM\n - 가는 방법 : 왓 프라캐우에서 도보 7분 거리 위치\n - chatuchak guide 공식 시장 어플로 원하는 점포 검색 가능\n - 슬리퍼, 민소매, 반바지 등 의류 제한 있음(왕궁 앞의 대여점에서 보증금으로 의류 대여 가능)\n - 왕궁 입장료 : 500 바트"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -323,11 +319,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="20dp"
-                                android:text="- 이용가능 시간 : 08:00 AM ~ 18:00 PM
-                                              - 가는 방법1 : 왓 포 사원 근처 선착장에서 배로 들어갈 수 있음 소요시간 5분
-                                              - 가는 방법2 : 왓 라캉에서 도보 20분 소요
-                                              - 새벽사원 입장료 : 50 바트
-                                              - 왕궁 처럼 의류 제한으로 인해 의류 대여 가능(보증금 100 바트 필요)"/>
+                                android:text="- 이용가능 시간 : 08:00 AM ~ 18:00 PM\n - 가는 방법1 : 왓 포 사원 근처 선착장에서 배로 들어갈 수 있음(소요시간 5분)\n - 가는 방법2 : 왓 라캉에서 도보 20분 소요\n - 새벽사원 입장료 : 50 바트\n - 왕궁 처럼 의류 제한으로 인해 의류 대여 가능(보증금 100 바트 필요)"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -477,19 +469,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/artist3"
-                android:orientation="vertical"
-                android:background="#04ff30">
+                android:orientation="vertical">
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="주요 맛집 리스트"
-                    android:textSize="40dp"
-                    android:layout_margin="20dp"
-                    android:textStyle="bold"/>
-                <ListView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/listview"></ListView>
+                    android:text="잠시후 사이트로 이동"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -500,7 +486,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="#02fff0">
+                    android:background="#01DFD7">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -551,15 +537,28 @@
                             android:layout_weight="1"/>
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        android:text="* 왼쪽 버튼을 클릭하면 이미지 첨부가 가능합니다."/>
+
                     <Button
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:id="@+id/btn6"
-                        android:background="@color/colorAccent"
                         android:text="리뷰 작성하기"
                         android:textSize="20dp"
-                        android:layout_margin="20dp"/>
+                        android:textColor="#fff"
+                        android:layout_margin="20dp"
+
+                        android:background="@drawable/buttonshape4"
+                        android:shadowColor="#3242A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"/>
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>
